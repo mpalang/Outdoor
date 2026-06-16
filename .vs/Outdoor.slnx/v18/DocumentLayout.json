@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\morit\\OneDrive\\Anwendungen\\Outdoor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{59553F9B-1339-4366-B653-0A3A38D29BFB}|Read Garmin Files\\Read Garmin Files.pyproj|C:\\Users\\morit\\OneDrive\\Anwendungen\\Outdoor\\Read Garmin Files\\Read_Garmin_Files.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{59553F9B-1339-4366-B653-0A3A38D29BFB}|Read Garmin Files\\Read Garmin Files.pyproj|solutionrelative:Read Garmin Files\\Read_Garmin_Files.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Read_Garmin_Files.py",
+              "DocumentMoniker": "C:\\Users\\morit\\OneDrive\\Anwendungen\\Outdoor\\Read Garmin Files\\Read_Garmin_Files.py",
+              "RelativeDocumentMoniker": "Read Garmin Files\\Read_Garmin_Files.py",
+              "ToolTip": "C:\\Users\\morit\\OneDrive\\Anwendungen\\Outdoor\\Read Garmin Files\\Read_Garmin_Files.py",
+              "RelativeToolTip": "Read Garmin Files\\Read_Garmin_Files.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-06-15T05:51:43.472Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
