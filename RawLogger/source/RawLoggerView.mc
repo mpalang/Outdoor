@@ -1,38 +1,35 @@
 import Toybox.WatchUi;
 import Toybox.Graphics;
 import Toybox.Lang;
-import Toybox.Sensor;
 import Toybox.Activity;
 import Toybox.FitContributor;
-import Toybox.System;
 
-// A Connect IQ Data Field that pulls as many raw sensor values as the
-// device exposes and writes them into custom fields in the recorded
-// FIT file, every time compute() runs (roughly once per second while
-// an activity is recording).
+// Data field logging barometric pressure into custom FIT fields.
 //
-// NOTE on limits: Garmin caps custom FitContributor data at 16 fields
-// and 256 bytes total per FIT record. The fields below (7 x 4-byte
-// floats/longs = 28 bytes) are well under that, leaving headroom if
-// you want to add more later (e.g. wind, accelerometer).
+// All values come from Activity.Info, which is handed to compute()
+// automatically. Sensor.getInfo() is NOT usable here - Garmin's docs
+// state it crashes when called from a data field app.
+//
+// Field budget: 4 floats + 1 uint8 = 17 bytes, well under
+// Garmin's 16-field / 256-byte FitContributor cap.
 class RawLoggerView extends WatchUi.DataField {
 
-    // FitContributor.Field handles - created once in initialize()
     hidden var fieldRawPressure as FitContributor.Field?;
     hidden var fieldAmbientPressure as FitContributor.Field?;
     hidden var fieldMslPressure as FitContributor.Field?;
-    hidden var fieldTemperature as FitContributor.Field?;
     hidden var fieldAltitude as FitContributor.Field?;
+    hidden var fieldGpsAccuracy as FitContributor.Field?;
 
-    // Last values, kept only so onUpdate() has something to draw
-    hidden var lastAmbientPressure as Float?;
+    // Last values for on-screen display
     hidden var lastRawPressure as Float?;
+    hidden var lastAmbientPressure as Float?;
+    hidden var lastGpsAccuracy as Number?;
 
     function initialize() {
         DataField.initialize();
 
-        // fieldId values just need to be unique small integers within
-        // this app - they are NOT the same as standard FIT field IDs.
+        // fieldId values are unique small ints within this app only -
+        // they are not standard FIT field numbers.
         fieldRawPressure = createField(
             "raw_pressure_pa",
             0,
@@ -54,70 +51,76 @@ class RawLoggerView extends WatchUi.DataField {
             { :mesgType => FitContributor.MESG_TYPE_RECORD, :units => "Pa" }
         );
 
-        fieldTemperature = createField(
-            "temperature_c",
-            3,
-            FitContributor.DATA_TYPE_FLOAT,
-            { :mesgType => FitContributor.MESG_TYPE_RECORD, :units => "C" }
-        );
-
         fieldAltitude = createField(
             "altitude_m",
-            4,
+            3,
             FitContributor.DATA_TYPE_FLOAT,
             { :mesgType => FitContributor.MESG_TYPE_RECORD, :units => "m" }
         );
+
+        // GPS fix quality, 0-4. UINT8 rather than FLOAT: it is a small
+        // integer, and this costs 1 byte instead of 4.
+        fieldGpsAccuracy = createField(
+            "gps_accuracy",
+            4,
+            FitContributor.DATA_TYPE_UINT8,
+            { :mesgType => FitContributor.MESG_TYPE_RECORD, :units => "" }
+        );
     }
 
-function compute(info as Activity.Info) as Void {
+    // Called ~once per second while an activity is recording.
+    // Every field is null-guarded: Activity.Info fields can return
+    // null before the sensor/GPS has settled.
+    function compute(info as Activity.Info) as Void {
 
-    if (info has :ambientPressure && info.ambientPressure != null) {
-        lastAmbientPressure = info.ambientPressure;
-        if (fieldAmbientPressure != null) {
-            fieldAmbientPressure.setData(info.ambientPressure);
+        // Temperature-compensated reading straight off the barometer.
+        if (info has :rawAmbientPressure && info.rawAmbientPressure != null) {
+            lastRawPressure = info.rawAmbientPressure;
+            if (fieldRawPressure != null) {
+                fieldRawPressure.setData(info.rawAmbientPressure);
+            }
+        }
+
+        // Same measurement, two-stage filtered by the device.
+        if (info has :ambientPressure && info.ambientPressure != null) {
+            lastAmbientPressure = info.ambientPressure;
+            if (fieldAmbientPressure != null) {
+                fieldAmbientPressure.setData(info.ambientPressure);
+            }
+        }
+
+        // Sea-level calibrated - needs a GPS fix first, so this stays
+        // null until positioning settles.
+        if (info has :meanSeaLevelPressure && info.meanSeaLevelPressure != null) {
+            if (fieldMslPressure != null) {
+                fieldMslPressure.setData(info.meanSeaLevelPressure);
+            }
+        }
+
+        if (info has :altitude && info.altitude != null) {
+            if (fieldAltitude != null) {
+                fieldAltitude.setData(info.altitude);
+            }
+        }
+
+        // 0 = no accuracy value available, 4 = good fix. Useful later
+        // as a QC channel for discarding records taken on a poor fix.
+        if (info has :currentLocationAccuracy && info.currentLocationAccuracy != null) {
+            lastGpsAccuracy = info.currentLocationAccuracy;
+            if (fieldGpsAccuracy != null) {
+                fieldGpsAccuracy.setData(info.currentLocationAccuracy);
+            }
         }
     }
 
-    if (info has :altitude && info.altitude != null) {
-        if (fieldAltitude != null) {
-            fieldAltitude.setData(info.altitude);
-        }
-    }
-
-    // Raw (unfiltered) pressure and mean-sea-level pressure are only
-    // exposed via Sensor.getInfo(), which crashes in data fields -
-    // so those two fields aren't obtainable this way. Ambient pressure
-    // (filtered) and altitude are what's actually available here.
-}
-
-    // Minimal on-screen display so you can confirm it's working live -
-    // shows the current raw and ambient pressure in Pa.
     function onUpdate(dc as Graphics.Dc) as Void {
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_BLACK);
         dc.clear();
-
-        var width = dc.getWidth();
-        var height = dc.getHeight();
-
-        var ambientText = "Amb: --";
-        if (lastAmbientPressure != null) {
-            ambientText = "Amb: " + lastAmbientPressure.format("%.1f") + " Pa";
-        }
-
-        var rawText = "Raw: --";
-        if (lastRawPressure != null) {
-            rawText = "Raw: " + lastRawPressure.format("%.1f") + " Pa";
-        }
-
+        var status = (fieldRawPressure == null) ? "NULL" : "OK";
         dc.drawText(
-            width / 2, height / 2 - 10,
-            Graphics.FONT_SMALL, ambientText,
-            Graphics.TEXT_JUSTIFY_CENTER
-        );
-        dc.drawText(
-            width / 2, height / 2 + 10,
-            Graphics.FONT_SMALL, rawText,
-            Graphics.TEXT_JUSTIFY_CENTER
+            dc.getWidth() / 2, dc.getHeight() / 2,
+            Graphics.FONT_SMALL, status,
+            Graphics.TEXT_JUSTIFY_CENTER | Graphics.TEXT_JUSTIFY_VCENTER
         );
     }
 }

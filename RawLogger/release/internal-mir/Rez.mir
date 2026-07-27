@@ -1,36 +1,36 @@
-[ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+[ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
 import Toybox.Lang;
-[ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
+[ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
 using Toybox.WatchUi;
-[ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [WatchUi,3,13,20]; @symbol_usingAlias = [Ui,3,24,26]; ]
+[ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [WatchUi,3,13,20]; @symbol_usingAlias = [Ui,3,24,26]; ]
 using Toybox.WatchUi as :Ui;
-[ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Graphics,4,13,21]; ]
+[ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Graphics,4,13,21]; ]
 using Toybox.Graphics;
-[ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Graphics,5,13,21]; @symbol_usingAlias = [Gfx,5,25,28]; ]
+[ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Graphics,5,13,21]; @symbol_usingAlias = [Gfx,5,25,28]; ]
 using Toybox.Graphics as :Gfx;
-[ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen"; @line = 7; @symbol_moduledef = [Rez,7,7,10]; ]
+[ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen"; @line = 7; @symbol_moduledef = [Rez,7,7,10]; ]
 module Rez {
-    [ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen"; @line = 7; ]
+    [ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen"; @line = 7; ]
     <init> {
     }
-    [ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen"; @line = 8; @symbol_moduledef = [Drawables,8,11,20]; ]
+    [ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen"; @line = 8; @symbol_moduledef = [Drawables,8,11,20]; ]
     module Drawables {
-        [ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen"; @line = 8; ]
+        [ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen"; @line = 8; ]
         <init> {
         }
-        [ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; @symbol_vardef = [LauncherIcon,9,27,39]; @symbol_type<0> = [ResourceId,9,43,53]; ]
+        [ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; @symbol_vardef = [LauncherIcon,9,27,39]; @symbol_type<0> = [ResourceId,9,43,53]; ]
         var LauncherIcon as ResourceId;
     }
-    [ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen"; @line = 12; @symbol_moduledef = [Layouts,12,11,18]; ]
+    [ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen"; @line = 12; @symbol_moduledef = [Layouts,12,11,18]; ]
     module Layouts {
-        [ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen"; @line = 12; ]
+        [ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen"; @line = 12; ]
         <init> {
         }
-        [ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen"; @line = 13; @symbol_functiondef = [MainLayout,13,17,27]; @symbol_param<0> = [dc,13,28,30]; @symbol_param<0>_type<0> = [Graphics,13,34,42]; @symbol_param<0>_type<1> = [Dc,13,43,45]; @symbol_return<0> = [Array,13,50,55]; @symbol_return<1> = [WatchUi,13,56,63]; @symbol_return<2> = [Drawable,13,64,72]; ]
+        [ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen"; @line = 13; @symbol_functiondef = [MainLayout,13,17,27]; @symbol_param<0> = [dc,13,28,30]; @symbol_param<0>_type<0> = [Graphics,13,34,42]; @symbol_param<0>_type<1> = [Dc,13,43,45]; @symbol_return<0> = [Array,13,50,55]; @symbol_return<1> = [WatchUi,13,56,63]; @symbol_return<2> = [Drawable,13,64,72]; ]
         function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_13_74_25_8_start:
-[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen" 14 12 ]
-            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_13_74_25_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_13_74_25_8_stop" ]
+c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_13_74_25_8_start:
+[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen" 14 12 ]
+            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_13_74_25_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_13_74_25_8_stop" ]
             %rez_cmp_local_var_dc_getHeight.1 = local;
             symbol [ rez_cmp_local_var_dc_getHeight %rez_cmp_local_var_dc_getHeight.1 14 16 46 ];
             %tmp.1 = lgetv %dc;
@@ -40,8 +40,8 @@ c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_sourc
             %tmp.3 = invoke %tmp.1 %tmp.2();
             lputv %rez_cmp_local_var_dc_getHeight.1 %tmp.3;
             symbol [ rez_cmp_local_var_dc_getHeight %rez_cmp_local_var_dc_getHeight.1 14 16 46 ];
-[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen" 16 12 ]
-            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_13_74_25_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_13_74_25_8_stop" ]
+[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen" 16 12 ]
+            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_13_74_25_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_13_74_25_8_stop" ]
             %rez_cmp_local_var_dc_getWidth.2 = local;
             symbol [ rez_cmp_local_var_dc_getWidth %rez_cmp_local_var_dc_getWidth.2 16 16 45 ];
             %tmp.4 = lgetv %dc;
@@ -51,8 +51,8 @@ c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_sourc
             %tmp.6 = invoke %tmp.4 %tmp.5();
             lputv %rez_cmp_local_var_dc_getWidth.2 %tmp.6;
             symbol [ rez_cmp_local_var_dc_getWidth %rez_cmp_local_var_dc_getWidth.2 16 16 45 ];
-[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen" 18 12 ]
-            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_13_74_25_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_13_74_25_8_stop" ]
+[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen" 18 12 ]
+            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_13_74_25_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_13_74_25_8_stop" ]
             %rez_cmp_local_custom_drawable_11939594661139614796.3 = local;
             symbol [ rez_cmp_local_custom_drawable_11939594661139614796 %rez_cmp_local_custom_drawable_11939594661139614796.3 18 16 66 ];
             symbol [ Background %tmp.10 18 73 83 ];
@@ -60,8 +60,8 @@ c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_sourc
             %tmp.7 = newc %tmp.10 ();
             lputv %rez_cmp_local_custom_drawable_11939594661139614796.3 %tmp.7;
             symbol [ rez_cmp_local_custom_drawable_11939594661139614796 %rez_cmp_local_custom_drawable_11939594661139614796.3 18 16 66 ];
-[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen" 20 12 ]
-            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_13_74_25_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_13_74_25_8_stop" ]
+[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen" 20 12 ]
+            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_13_74_25_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_13_74_25_8_stop" ]
             %rez_cmp_local_text_label.4 = local;
             symbol [ rez_cmp_local_text_label %rez_cmp_local_text_label.4 20 16 40 ];
             symbol [ WatchUi %tmp.13 20 47 54 ];
@@ -127,8 +127,8 @@ c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_sourc
             %tmp.11 = newc %tmp.14 (%tmp.58);
             lputv %rez_cmp_local_text_label.4 %tmp.11;
             symbol [ rez_cmp_local_text_label %rez_cmp_local_text_label.4 20 16 40 ];
-[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen" 22 12 ]
-            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_13_74_25_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_13_74_25_8_stop" ]
+[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen" 22 12 ]
+            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_13_74_25_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_13_74_25_8_stop" ]
             %rez_cmp_local_text_value.5 = local;
             symbol [ rez_cmp_local_text_value %rez_cmp_local_text_value.5 22 16 40 ];
             symbol [ WatchUi %tmp.61 22 47 54 ];
@@ -194,7 +194,7 @@ c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_sourc
             %tmp.59 = newc %tmp.62 (%tmp.106);
             lputv %rez_cmp_local_text_value.5 %tmp.59;
             symbol [ rez_cmp_local_text_value %rez_cmp_local_text_value.5 22 16 40 ];
-[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen" 24 12 ]
+[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen" 24 12 ]
             %tmp.107 = newa 3 Array<WatchUi.Drawable>;
             symbol [ Array %tmp.107 24 127 132 ];
             symbol [ WatchUi %tmp.107 24 133 140 ];
@@ -212,13 +212,13 @@ c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_sourc
             %tmp.115 = dup %tmp.113;
             %tmp.116 = aputv %tmp.115 2 %tmp.114;
             ret %tmp.116;
-c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_13_74_25_8_stop:
+c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_13_74_25_8_stop:
         }
-        [ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen"; @line = 27; @symbol_functiondef = [TopLeftLayout,27,17,30]; @symbol_param<0> = [dc,27,31,33]; @symbol_param<0>_type<0> = [Graphics,27,37,45]; @symbol_param<0>_type<1> = [Dc,27,46,48]; @symbol_return<0> = [Array,27,53,58]; @symbol_return<1> = [WatchUi,27,59,66]; @symbol_return<2> = [Drawable,27,67,75]; ]
+        [ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen"; @line = 27; @symbol_functiondef = [TopLeftLayout,27,17,30]; @symbol_param<0> = [dc,27,31,33]; @symbol_param<0>_type<0> = [Graphics,27,37,45]; @symbol_param<0>_type<1> = [Dc,27,46,48]; @symbol_return<0> = [Array,27,53,58]; @symbol_return<1> = [WatchUi,27,59,66]; @symbol_return<2> = [Drawable,27,67,75]; ]
         function TopLeftLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_27_77_35_8_start:
-[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen" 28 12 ]
-            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_27_77_35_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_27_77_35_8_stop" ]
+c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_27_77_35_8_start:
+[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen" 28 12 ]
+            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_27_77_35_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_27_77_35_8_stop" ]
             %rez_cmp_local_custom_drawable_83741574912206153191.1 = local;
             symbol [ rez_cmp_local_custom_drawable_83741574912206153191 %rez_cmp_local_custom_drawable_83741574912206153191.1 28 16 66 ];
             symbol [ Background %tmp.4 28 73 83 ];
@@ -226,8 +226,8 @@ c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_sourc
             %tmp.1 = newc %tmp.4 ();
             lputv %rez_cmp_local_custom_drawable_83741574912206153191.1 %tmp.1;
             symbol [ rez_cmp_local_custom_drawable_83741574912206153191 %rez_cmp_local_custom_drawable_83741574912206153191.1 28 16 66 ];
-[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen" 30 12 ]
-            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_27_77_35_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_27_77_35_8_stop" ]
+[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen" 30 12 ]
+            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_27_77_35_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_27_77_35_8_stop" ]
             %rez_cmp_local_text_label.2 = local;
             symbol [ rez_cmp_local_text_label %rez_cmp_local_text_label.2 30 16 40 ];
             symbol [ WatchUi %tmp.7 30 47 54 ];
@@ -277,8 +277,8 @@ c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_sourc
             %tmp.5 = newc %tmp.8 (%tmp.42);
             lputv %rez_cmp_local_text_label.2 %tmp.5;
             symbol [ rez_cmp_local_text_label %rez_cmp_local_text_label.2 30 16 40 ];
-[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen" 32 12 ]
-            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_27_77_35_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_27_77_35_8_stop" ]
+[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen" 32 12 ]
+            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_27_77_35_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_27_77_35_8_stop" ]
             %rez_cmp_local_text_value.3 = local;
             symbol [ rez_cmp_local_text_value %rez_cmp_local_text_value.3 32 16 40 ];
             symbol [ WatchUi %tmp.45 32 47 54 ];
@@ -328,7 +328,7 @@ c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_sourc
             %tmp.43 = newc %tmp.46 (%tmp.80);
             lputv %rez_cmp_local_text_value.3 %tmp.43;
             symbol [ rez_cmp_local_text_value %rez_cmp_local_text_value.3 32 16 40 ];
-[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen" 34 12 ]
+[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen" 34 12 ]
             %tmp.81 = newa 3 Array<WatchUi.Drawable>;
             symbol [ Array %tmp.81 34 127 132 ];
             symbol [ WatchUi %tmp.81 34 133 140 ];
@@ -346,13 +346,13 @@ c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_sourc
             %tmp.89 = dup %tmp.87;
             %tmp.90 = aputv %tmp.89 2 %tmp.88;
             ret %tmp.90;
-c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_27_77_35_8_stop:
+c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_27_77_35_8_stop:
         }
-        [ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen"; @line = 37; @symbol_functiondef = [TopRightLayout,37,17,31]; @symbol_param<0> = [dc,37,32,34]; @symbol_param<0>_type<0> = [Graphics,37,38,46]; @symbol_param<0>_type<1> = [Dc,37,47,49]; @symbol_return<0> = [Array,37,54,59]; @symbol_return<1> = [WatchUi,37,60,67]; @symbol_return<2> = [Drawable,37,68,76]; ]
+        [ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen"; @line = 37; @symbol_functiondef = [TopRightLayout,37,17,31]; @symbol_param<0> = [dc,37,32,34]; @symbol_param<0>_type<0> = [Graphics,37,38,46]; @symbol_param<0>_type<1> = [Dc,37,47,49]; @symbol_return<0> = [Array,37,54,59]; @symbol_return<1> = [WatchUi,37,60,67]; @symbol_return<2> = [Drawable,37,68,76]; ]
         function TopRightLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_37_78_45_8_start:
-[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen" 38 12 ]
-            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_37_78_45_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_37_78_45_8_stop" ]
+c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_37_78_45_8_start:
+[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen" 38 12 ]
+            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_37_78_45_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_37_78_45_8_stop" ]
             %rez_cmp_local_custom_drawable_11824933295158922413.1 = local;
             symbol [ rez_cmp_local_custom_drawable_11824933295158922413 %rez_cmp_local_custom_drawable_11824933295158922413.1 38 16 66 ];
             symbol [ Background %tmp.4 38 73 83 ];
@@ -360,8 +360,8 @@ c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_sourc
             %tmp.1 = newc %tmp.4 ();
             lputv %rez_cmp_local_custom_drawable_11824933295158922413.1 %tmp.1;
             symbol [ rez_cmp_local_custom_drawable_11824933295158922413 %rez_cmp_local_custom_drawable_11824933295158922413.1 38 16 66 ];
-[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen" 40 12 ]
-            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_37_78_45_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_37_78_45_8_stop" ]
+[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen" 40 12 ]
+            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_37_78_45_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_37_78_45_8_stop" ]
             %rez_cmp_local_text_label.2 = local;
             symbol [ rez_cmp_local_text_label %rez_cmp_local_text_label.2 40 16 40 ];
             symbol [ WatchUi %tmp.7 40 47 54 ];
@@ -411,8 +411,8 @@ c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_sourc
             %tmp.5 = newc %tmp.8 (%tmp.42);
             lputv %rez_cmp_local_text_label.2 %tmp.5;
             symbol [ rez_cmp_local_text_label %rez_cmp_local_text_label.2 40 16 40 ];
-[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen" 42 12 ]
-            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_37_78_45_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_37_78_45_8_stop" ]
+[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen" 42 12 ]
+            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_37_78_45_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_37_78_45_8_stop" ]
             %rez_cmp_local_text_value.3 = local;
             symbol [ rez_cmp_local_text_value %rez_cmp_local_text_value.3 42 16 40 ];
             symbol [ WatchUi %tmp.45 42 47 54 ];
@@ -462,7 +462,7 @@ c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_sourc
             %tmp.43 = newc %tmp.46 (%tmp.80);
             lputv %rez_cmp_local_text_value.3 %tmp.43;
             symbol [ rez_cmp_local_text_value %rez_cmp_local_text_value.3 42 16 40 ];
-[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen" 44 12 ]
+[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen" 44 12 ]
             %tmp.81 = newa 3 Array<WatchUi.Drawable>;
             symbol [ Array %tmp.81 44 127 132 ];
             symbol [ WatchUi %tmp.81 44 133 140 ];
@@ -480,13 +480,13 @@ c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_sourc
             %tmp.89 = dup %tmp.87;
             %tmp.90 = aputv %tmp.89 2 %tmp.88;
             ret %tmp.90;
-c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_37_78_45_8_stop:
+c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_37_78_45_8_stop:
         }
-        [ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen"; @line = 47; @symbol_functiondef = [BottomLeftLayout,47,17,33]; @symbol_param<0> = [dc,47,34,36]; @symbol_param<0>_type<0> = [Graphics,47,40,48]; @symbol_param<0>_type<1> = [Dc,47,49,51]; @symbol_return<0> = [Array,47,56,61]; @symbol_return<1> = [WatchUi,47,62,69]; @symbol_return<2> = [Drawable,47,70,78]; ]
+        [ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen"; @line = 47; @symbol_functiondef = [BottomLeftLayout,47,17,33]; @symbol_param<0> = [dc,47,34,36]; @symbol_param<0>_type<0> = [Graphics,47,40,48]; @symbol_param<0>_type<1> = [Dc,47,49,51]; @symbol_return<0> = [Array,47,56,61]; @symbol_return<1> = [WatchUi,47,62,69]; @symbol_return<2> = [Drawable,47,70,78]; ]
         function BottomLeftLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_47_80_55_8_start:
-[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen" 48 12 ]
-            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_47_80_55_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_47_80_55_8_stop" ]
+c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_47_80_55_8_start:
+[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen" 48 12 ]
+            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_47_80_55_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_47_80_55_8_stop" ]
             %rez_cmp_local_custom_drawable_16380678501279751870.1 = local;
             symbol [ rez_cmp_local_custom_drawable_16380678501279751870 %rez_cmp_local_custom_drawable_16380678501279751870.1 48 16 66 ];
             symbol [ Background %tmp.4 48 73 83 ];
@@ -494,8 +494,8 @@ c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_sourc
             %tmp.1 = newc %tmp.4 ();
             lputv %rez_cmp_local_custom_drawable_16380678501279751870.1 %tmp.1;
             symbol [ rez_cmp_local_custom_drawable_16380678501279751870 %rez_cmp_local_custom_drawable_16380678501279751870.1 48 16 66 ];
-[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen" 50 12 ]
-            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_47_80_55_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_47_80_55_8_stop" ]
+[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen" 50 12 ]
+            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_47_80_55_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_47_80_55_8_stop" ]
             %rez_cmp_local_text_label.2 = local;
             symbol [ rez_cmp_local_text_label %rez_cmp_local_text_label.2 50 16 40 ];
             symbol [ WatchUi %tmp.7 50 47 54 ];
@@ -545,8 +545,8 @@ c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_sourc
             %tmp.5 = newc %tmp.8 (%tmp.42);
             lputv %rez_cmp_local_text_label.2 %tmp.5;
             symbol [ rez_cmp_local_text_label %rez_cmp_local_text_label.2 50 16 40 ];
-[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen" 52 12 ]
-            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_47_80_55_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_47_80_55_8_stop" ]
+[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen" 52 12 ]
+            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_47_80_55_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_47_80_55_8_stop" ]
             %rez_cmp_local_text_value.3 = local;
             symbol [ rez_cmp_local_text_value %rez_cmp_local_text_value.3 52 16 40 ];
             symbol [ WatchUi %tmp.45 52 47 54 ];
@@ -596,7 +596,7 @@ c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_sourc
             %tmp.43 = newc %tmp.46 (%tmp.80);
             lputv %rez_cmp_local_text_value.3 %tmp.43;
             symbol [ rez_cmp_local_text_value %rez_cmp_local_text_value.3 52 16 40 ];
-[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen" 54 12 ]
+[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen" 54 12 ]
             %tmp.81 = newa 3 Array<WatchUi.Drawable>;
             symbol [ Array %tmp.81 54 127 132 ];
             symbol [ WatchUi %tmp.81 54 133 140 ];
@@ -614,13 +614,13 @@ c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_sourc
             %tmp.89 = dup %tmp.87;
             %tmp.90 = aputv %tmp.89 2 %tmp.88;
             ret %tmp.90;
-c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_47_80_55_8_stop:
+c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_47_80_55_8_stop:
         }
-        [ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen"; @line = 57; @symbol_functiondef = [BottomRightLayout,57,17,34]; @symbol_param<0> = [dc,57,35,37]; @symbol_param<0>_type<0> = [Graphics,57,41,49]; @symbol_param<0>_type<1> = [Dc,57,50,52]; @symbol_return<0> = [Array,57,57,62]; @symbol_return<1> = [WatchUi,57,63,70]; @symbol_return<2> = [Drawable,57,71,79]; ]
+        [ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen"; @line = 57; @symbol_functiondef = [BottomRightLayout,57,17,34]; @symbol_param<0> = [dc,57,35,37]; @symbol_param<0>_type<0> = [Graphics,57,41,49]; @symbol_param<0>_type<1> = [Dc,57,50,52]; @symbol_return<0> = [Array,57,57,62]; @symbol_return<1> = [WatchUi,57,63,70]; @symbol_return<2> = [Drawable,57,71,79]; ]
         function BottomRightLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_57_81_65_8_start:
-[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen" 58 12 ]
-            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_57_81_65_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_57_81_65_8_stop" ]
+c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_57_81_65_8_start:
+[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen" 58 12 ]
+            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_57_81_65_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_57_81_65_8_stop" ]
             %rez_cmp_local_custom_drawable_16187860511068497434.1 = local;
             symbol [ rez_cmp_local_custom_drawable_16187860511068497434 %rez_cmp_local_custom_drawable_16187860511068497434.1 58 16 66 ];
             symbol [ Background %tmp.4 58 73 83 ];
@@ -628,8 +628,8 @@ c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_sourc
             %tmp.1 = newc %tmp.4 ();
             lputv %rez_cmp_local_custom_drawable_16187860511068497434.1 %tmp.1;
             symbol [ rez_cmp_local_custom_drawable_16187860511068497434 %rez_cmp_local_custom_drawable_16187860511068497434.1 58 16 66 ];
-[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen" 60 12 ]
-            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_57_81_65_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_57_81_65_8_stop" ]
+[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen" 60 12 ]
+            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_57_81_65_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_57_81_65_8_stop" ]
             %rez_cmp_local_text_label.2 = local;
             symbol [ rez_cmp_local_text_label %rez_cmp_local_text_label.2 60 16 40 ];
             symbol [ WatchUi %tmp.7 60 47 54 ];
@@ -679,8 +679,8 @@ c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_sourc
             %tmp.5 = newc %tmp.8 (%tmp.42);
             lputv %rez_cmp_local_text_label.2 %tmp.5;
             symbol [ rez_cmp_local_text_label %rez_cmp_local_text_label.2 60 16 40 ];
-[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen" 62 12 ]
-            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_57_81_65_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_57_81_65_8_stop" ]
+[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen" 62 12 ]
+            [ "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_57_81_65_8_start" "c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_57_81_65_8_stop" ]
             %rez_cmp_local_text_value.3 = local;
             symbol [ rez_cmp_local_text_value %rez_cmp_local_text_value.3 62 16 40 ];
             symbol [ WatchUi %tmp.45 62 47 54 ];
@@ -730,7 +730,7 @@ c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_sourc
             %tmp.43 = newc %tmp.46 (%tmp.80);
             lputv %rez_cmp_local_text_value.3 %tmp.43;
             symbol [ rez_cmp_local_text_value %rez_cmp_local_text_value.3 62 16 40 ];
-[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen" 64 12 ]
+[ "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen" 64 12 ]
             %tmp.81 = newa 3 Array<WatchUi.Drawable>;
             symbol [ Array %tmp.81 64 127 132 ];
             symbol [ WatchUi %tmp.81 64 133 140 ];
@@ -748,20 +748,20 @@ c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_sourc
             %tmp.89 = dup %tmp.87;
             %tmp.90 = aputv %tmp.89 2 %tmp.88;
             ret %tmp.90;
-c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_bin_gen_006_B4336_00_source_Rez_mcgen_57_81_65_8_stop:
+c__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_release_gen_006_B4336_00_source_Rez_mcgen_57_81_65_8_stop:
         }
     }
-    [ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen"; @line = 68; @symbol_moduledef = [Strings,68,11,18]; ]
+    [ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen"; @line = 68; @symbol_moduledef = [Strings,68,11,18]; ]
     module Strings {
-        [ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen"; @line = 68; ]
+        [ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen"; @line = 68; ]
         <init> {
         }
-        [ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen"; @line = 69; @position = 27; initialized = true; @symbol_vardef = [label,69,27,32]; @symbol_type<0> = [ResourceId,69,36,46]; ]
+        [ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen"; @line = 69; @position = 27; initialized = true; @symbol_vardef = [label,69,27,32]; @symbol_type<0> = [ResourceId,69,36,46]; ]
         var label as ResourceId;
-        [ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen"; @line = 70; @position = 27; initialized = true; @symbol_vardef = [AppName,70,27,34]; @symbol_type<0> = [ResourceId,70,38,48]; ]
+        [ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen"; @line = 70; @position = 27; initialized = true; @symbol_vardef = [AppName,70,27,34]; @symbol_type<0> = [ResourceId,70,38,48]; ]
         var AppName as ResourceId;
     }
 }
-[ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\bin\gen\006-B4336-00\source\Rez.mcgen"; @line = 1; ]
+[ @file = "c:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\release\gen\006-B4336-00\source\Rez.mcgen"; @line = 1; ]
 <init> {
 }

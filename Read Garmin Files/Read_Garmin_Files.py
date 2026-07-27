@@ -4,6 +4,9 @@ import gpxpy
 from matplotlib import pyplot as plt
 from datetime import datetime
 from garmin_fit_sdk import Decoder, Stream
+from pathlib import Path
+from fitparse import FitFile
+
 
 def import_gpx(filename):
     
@@ -28,29 +31,34 @@ def import_gpx(filename):
     return gpx
             
 def import_fit(filename):
-    fitfile = Decoder(Stream.from_file(filename)).read()[0]['record_mesgs']
+    stream = Stream.from_file(filename)
+    decoder = Decoder(stream)
+    message, error = decoder.read()
     
-    fit=dict()
-    for key in ['timestamp', 'position_lat', 'position_long', 'enhanced_speed', 'enhanced_altitude', 'altitude', 'speed']:
-        fit[key]=[]
-    for i in fitfile:
-        for key in ['timestamp', 'position_lat', 'position_long', 'enhanced_speed', 'enhanced_altitude', 'altitude', 'speed']:
-            fit[key].append(i[key])
+    # fit=dict()
+    # for key in ['timestamp', 'position_lat', 'position_long', 'enhanced_speed', 'enhanced_altitude', 'altitude', 'speed']:
+    #     fit[key]=[]
+    # for i in fitfile:
+    #     for key in ['timestamp', 'position_lat', 'position_long', 'enhanced_speed', 'enhanced_altitude', 'altitude', 'speed']:
+    #         fit[key].append(i[key])
     
-    t0 = fit['timestamp'][0]
-    for n,i in enumerate(fit['timestamp']):
-        fit['timestamp'][n] = (i-t0).total_seconds()
+    # t0 = fit['timestamp'][0]
+    # for n,i in enumerate(fit['timestamp']):
+    #     fit['timestamp'][n] = (i-t0).total_seconds()
     
-    return fit
+    return message,error
 
 
 # gpx_filename = 'C:/Users/morit/OneDrive/Anwendungen/Outdoor/Read Garmin Files/ActivityData/Dove Lake Tasmania/activity_22506825181.gpx'
 # gpx = import_gpx(gpx_filename)
+base = Path(__file__).parent/'ActivityData'
+fit_filename = base/'Test Hughenden/2026-07-27 17.05.35.fit'
+msg,error = import_fit(fit_filename) 
 
-fit_filename = 'C:/Users/morit/OneDrive/Anwendungen/Outdoor/Read Garmin Files/ActivityData/Dove Lake Tasmania/22506825181/22506825181_ACTIVITY.fit'
-d1 = import_fit(fit_filename) #This file has elevation data from Garmin Device (with barometric adjustment)
-gpx_filename = 'C:/Users/morit/OneDrive/Anwendungen/Outdoor/Read Garmin Files/ActivityData/Dove Lake Tasmania/activity_22506825181_alternative.gpx'
-d2 = import_gpx(gpx_filename) #This file has elevation data from gps dataset
+f = FitFile(str(fit_filename))
+last = list(f.get_messages('record'))[-1]
+for d in last:
+    print(d.name, d.value, d.units)
 
 #%%        
         

@@ -466,86 +466,192 @@ C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_10
 C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_108_8_113_8_if_end:
 C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_74_52_114_4_stop:
     }
-    [ @file = "C:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\source\RawLoggerView.mc"; @line = 116; @symbol_functiondef = [onUpdate,116,13,21]; @symbol_param<0> = [dc,116,22,24]; @symbol_param<0>_type<0> = [Graphics,116,28,36]; @symbol_param<0>_type<1> = [Dc,116,37,39]; ]
+    [ @file = "C:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\source\RawLoggerView.mc"; @line = 118; @symbol_functiondef = [onUpdate,118,13,21]; @symbol_param<0> = [dc,118,22,24]; @symbol_param<0>_type<0> = [Graphics,118,28,36]; @symbol_param<0>_type<1> = [Dc,118,37,39]; ]
     function onUpdate(dc as Graphics.Dc) as Void {
-C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_116_49_125_4_start:
-[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\source\RawLoggerView.mc" 117 8 ]
+C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_118_49_148_4_start:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\source\RawLoggerView.mc" 119 8 ]
         %tmp.1 = lgetv %dc;
-        symbol [ dc %tmp.1 117 8 10 ];
-        symbol [ setColor %tmp.2 117 11 19 ];
+        symbol [ dc %tmp.1 119 8 10 ];
+        symbol [ setColor %tmp.2 119 11 19 ];
         %tmp.2 = getv function %tmp.1 :setColor;
-        symbol [ Graphics %tmp.3 117 20 28 ];
+        symbol [ Graphics %tmp.3 119 20 28 ];
         %tmp.3 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.4 117 29 40 ];
+        symbol [ COLOR_WHITE %tmp.4 119 29 40 ];
         %tmp.4 = getv %tmp.3 :COLOR_WHITE;
-        symbol [ Graphics %tmp.5 117 42 50 ];
+        symbol [ Graphics %tmp.5 119 42 50 ];
         %tmp.5 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.6 117 51 62 ];
+        symbol [ COLOR_BLACK %tmp.6 119 51 62 ];
         %tmp.6 = getv %tmp.5 :COLOR_BLACK;
         invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
-[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\source\RawLoggerView.mc" 118 8 ]
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\source\RawLoggerView.mc" 120 8 ]
         %tmp.7 = lgetv %dc;
-        symbol [ dc %tmp.7 118 8 10 ];
-        symbol [ clear %tmp.8 118 11 16 ];
+        symbol [ dc %tmp.7 120 8 10 ];
+        symbol [ clear %tmp.8 120 11 16 ];
         %tmp.8 = getv function %tmp.7 :clear;
         invoke %tmp.7 %tmp.8();
-[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\source\RawLoggerView.mc" 119 8 ]
-        [ "C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_116_49_125_4_start" "C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_116_49_125_4_stop" ]
-        %status.1 = local;
-        symbol [ status %status.1 119 12 18 ];
-C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_119_21_119_59_begin:
-        symbol [ fieldRawPressure %tmp.10 119 22 38 ];
-        %tmp.10 = getv ? :fieldRawPressure;
-        %tmp.11 = null;
-        %tmp.12 = eq %tmp.10 %tmp.11;
-        bf %tmp.12 @C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_119_21_119_59_else_false;
-C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_119_21_119_59_true:
-        %tmp.13 = "NULL";
-        push %tmp.13;
-        goto @C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_119_21_119_59_end;
-C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_119_21_119_59_else_false:
-        %tmp.14 = "OK";
-        push %tmp.14;
-C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_119_21_119_59_end:
-        %tmp.15 = phi [%tmp.12 @C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_119_21_119_59_begin] [%tmp.13 @C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_119_21_119_59_true] [%tmp.14 @C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_119_21_119_59_else_false] [%tmp.15 @C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_119_21_119_59_end];
-        lputv %status.1 %tmp.15;
-        symbol [ status %status.1 119 12 18 ];
-[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\source\RawLoggerView.mc" 120 8 ]
-        %tmp.16 = lgetv %dc;
-        symbol [ dc %tmp.16 120 8 10 ];
-        symbol [ drawText %tmp.17 120 11 19 ];
-        %tmp.17 = getv function %tmp.16 :drawText;
-        %tmp.18 = lgetv %dc;
-        symbol [ dc %tmp.18 121 12 14 ];
-        symbol [ getWidth %tmp.19 121 15 23 ];
-        %tmp.19 = getv function %tmp.18 :getWidth;
-        %tmp.20 = invoke %tmp.18 %tmp.19();
-        %tmp.21 = 2;
-        %tmp.22 = div %tmp.20 %tmp.21;
-        %tmp.23 = lgetv %dc;
-        symbol [ dc %tmp.23 121 31 33 ];
-        symbol [ getHeight %tmp.24 121 34 43 ];
-        %tmp.24 = getv function %tmp.23 :getHeight;
-        %tmp.25 = invoke %tmp.23 %tmp.24();
-        %tmp.26 = 2;
-        %tmp.27 = div %tmp.25 %tmp.26;
-        symbol [ Graphics %tmp.28 122 12 20 ];
-        %tmp.28 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.29 122 21 31 ];
-        %tmp.29 = getv %tmp.28 :FONT_SMALL;
-        %tmp.30 = lgetv %status.1;
-        symbol [ status %tmp.30 122 33 39 ];
-        symbol [ Graphics %tmp.31 123 12 20 ];
-        %tmp.31 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.32 123 21 40 ];
-        %tmp.32 = getv %tmp.31 :TEXT_JUSTIFY_CENTER;
-        symbol [ Graphics %tmp.33 123 43 51 ];
-        %tmp.33 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_VCENTER %tmp.34 123 52 72 ];
-        %tmp.34 = getv %tmp.33 :TEXT_JUSTIFY_VCENTER;
-        %tmp.35 = bitor %tmp.32 %tmp.34;
-        invoke %tmp.16 %tmp.17(%tmp.22, %tmp.27, %tmp.29, %tmp.30, %tmp.35);
-C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_116_49_125_4_stop:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\source\RawLoggerView.mc" 122 8 ]
+        [ "C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_118_49_148_4_start" "C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_118_49_148_4_stop" ]
+        %width.1 = local;
+        symbol [ width %width.1 122 12 17 ];
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 122 20 22 ];
+        symbol [ getWidth %tmp.10 122 23 31 ];
+        %tmp.10 = getv function %tmp.9 :getWidth;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        lputv %width.1 %tmp.11;
+        symbol [ width %width.1 122 12 17 ];
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\source\RawLoggerView.mc" 123 8 ]
+        [ "C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_118_49_148_4_start" "C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_118_49_148_4_stop" ]
+        %height.2 = local;
+        symbol [ height %height.2 123 12 18 ];
+        %tmp.12 = lgetv %dc;
+        symbol [ dc %tmp.12 123 21 23 ];
+        symbol [ getHeight %tmp.13 123 24 33 ];
+        %tmp.13 = getv function %tmp.12 :getHeight;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        lputv %height.2 %tmp.14;
+        symbol [ height %height.2 123 12 18 ];
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\source\RawLoggerView.mc" 125 8 ]
+        [ "C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_118_49_148_4_start" "C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_118_49_148_4_stop" ]
+        %rawText.3 = local;
+        symbol [ rawText %rawText.3 125 12 19 ];
+        %tmp.15 = "Raw: --";
+        lputv %rawText.3 %tmp.15;
+        symbol [ rawText %rawText.3 125 12 19 ];
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\source\RawLoggerView.mc" 126 8 ]
+C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_126_8_128_8_if_stmt:
+        symbol [ lastRawPressure %tmp.17 126 12 27 ];
+        %tmp.17 = getv ? :lastRawPressure;
+        %tmp.18 = null;
+        %tmp.19 = ne %tmp.17 %tmp.18;
+        bf %tmp.19 @C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_126_8_128_8_if_end;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_126_8_128_8_if_true:
+C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_126_37_128_8_start:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\source\RawLoggerView.mc" 127 12 ]
+        %tmp.20 = "Raw: ";
+        symbol [ lastRawPressure %tmp.22 127 32 47 ];
+        %tmp.22 = getv ? :lastRawPressure;
+        %tmp.23 = as %tmp.22 { (!Null) };
+        symbol [ format %tmp.24 127 48 54 ];
+        %tmp.24 = getv function %tmp.23 :format;
+        %tmp.25 = "%.0f";
+        %tmp.26 = invoke %tmp.23 %tmp.24(%tmp.25);
+        %tmp.27 = add %tmp.20 %tmp.26;
+        lputv %rawText.3 %tmp.27;
+        symbol [ rawText %rawText.3 127 12 19 ];
+C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_126_37_128_8_stop:
+        goto @C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_126_8_128_8_if_end;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_126_8_128_8_if_end:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\source\RawLoggerView.mc" 130 8 ]
+        [ "C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_118_49_148_4_start" "C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_118_49_148_4_stop" ]
+        %ambText.4 = local;
+        symbol [ ambText %ambText.4 130 12 19 ];
+        %tmp.28 = "Flt: --";
+        lputv %ambText.4 %tmp.28;
+        symbol [ ambText %ambText.4 130 12 19 ];
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\source\RawLoggerView.mc" 131 8 ]
+C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_131_8_133_8_if_stmt:
+        symbol [ lastAmbientPressure %tmp.30 131 12 31 ];
+        %tmp.30 = getv ? :lastAmbientPressure;
+        %tmp.31 = null;
+        %tmp.32 = ne %tmp.30 %tmp.31;
+        bf %tmp.32 @C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_131_8_133_8_if_end;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_131_8_133_8_if_true:
+C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_131_41_133_8_start:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\source\RawLoggerView.mc" 132 12 ]
+        %tmp.33 = "Flt: ";
+        symbol [ lastAmbientPressure %tmp.35 132 32 51 ];
+        %tmp.35 = getv ? :lastAmbientPressure;
+        %tmp.36 = as %tmp.35 { (!Null) };
+        symbol [ format %tmp.37 132 52 58 ];
+        %tmp.37 = getv function %tmp.36 :format;
+        %tmp.38 = "%.0f";
+        %tmp.39 = invoke %tmp.36 %tmp.37(%tmp.38);
+        %tmp.40 = add %tmp.33 %tmp.39;
+        lputv %ambText.4 %tmp.40;
+        symbol [ ambText %ambText.4 132 12 19 ];
+C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_131_41_133_8_stop:
+        goto @C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_131_8_133_8_if_end;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_131_8_133_8_if_end:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\source\RawLoggerView.mc" 134 8 ]
+C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_134_8_136_8_if_stmt:
+        symbol [ lastGpsAccuracy %tmp.42 134 12 27 ];
+        %tmp.42 = getv ? :lastGpsAccuracy;
+        %tmp.43 = null;
+        %tmp.44 = ne %tmp.42 %tmp.43;
+        bf %tmp.44 @C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_134_8_136_8_if_end;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_134_8_136_8_if_true:
+C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_134_37_136_8_start:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\source\RawLoggerView.mc" 135 12 ]
+        %tmp.45 = lgetv %ambText.4;
+        symbol [ ambText %tmp.45 135 22 29 ];
+        %tmp.46 = "  Q";
+        %tmp.47 = add %tmp.45 %tmp.46;
+        symbol [ lastGpsAccuracy %tmp.49 135 40 55 ];
+        %tmp.49 = getv ? :lastGpsAccuracy;
+        %tmp.50 = as %tmp.49 { (!Null) };
+        symbol [ toString %tmp.51 135 56 64 ];
+        %tmp.51 = getv function %tmp.50 :toString;
+        %tmp.52 = invoke %tmp.50 %tmp.51();
+        %tmp.53 = add %tmp.47 %tmp.52;
+        lputv %ambText.4 %tmp.53;
+        symbol [ ambText %ambText.4 135 12 19 ];
+C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_134_37_136_8_stop:
+        goto @C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_134_8_136_8_if_end;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_134_8_136_8_if_end:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\source\RawLoggerView.mc" 138 8 ]
+        %tmp.54 = lgetv %dc;
+        symbol [ dc %tmp.54 138 8 10 ];
+        symbol [ drawText %tmp.55 138 11 19 ];
+        %tmp.55 = getv function %tmp.54 :drawText;
+        %tmp.56 = lgetv %width.1;
+        symbol [ width %tmp.56 139 12 17 ];
+        %tmp.57 = 2;
+        %tmp.58 = div %tmp.56 %tmp.57;
+        %tmp.59 = lgetv %height.2;
+        symbol [ height %tmp.59 139 23 29 ];
+        %tmp.60 = 2;
+        %tmp.61 = div %tmp.59 %tmp.60;
+        %tmp.62 = 15;
+        %tmp.63 = sub %tmp.61 %tmp.62;
+        symbol [ Graphics %tmp.64 140 12 20 ];
+        %tmp.64 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.65 140 21 31 ];
+        %tmp.65 = getv %tmp.64 :FONT_SMALL;
+        %tmp.66 = lgetv %rawText.3;
+        symbol [ rawText %tmp.66 140 33 40 ];
+        symbol [ Graphics %tmp.67 141 12 20 ];
+        %tmp.67 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.68 141 21 40 ];
+        %tmp.68 = getv %tmp.67 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.54 %tmp.55(%tmp.58, %tmp.63, %tmp.65, %tmp.66, %tmp.68);
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\source\RawLoggerView.mc" 143 8 ]
+        %tmp.69 = lgetv %dc;
+        symbol [ dc %tmp.69 143 8 10 ];
+        symbol [ drawText %tmp.70 143 11 19 ];
+        %tmp.70 = getv function %tmp.69 :drawText;
+        %tmp.71 = lgetv %width.1;
+        symbol [ width %tmp.71 144 12 17 ];
+        %tmp.72 = 2;
+        %tmp.73 = div %tmp.71 %tmp.72;
+        %tmp.74 = lgetv %height.2;
+        symbol [ height %tmp.74 144 23 29 ];
+        %tmp.75 = 2;
+        %tmp.76 = div %tmp.74 %tmp.75;
+        %tmp.77 = 15;
+        %tmp.78 = add %tmp.76 %tmp.77;
+        symbol [ Graphics %tmp.79 145 12 20 ];
+        %tmp.79 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.80 145 21 31 ];
+        %tmp.80 = getv %tmp.79 :FONT_SMALL;
+        %tmp.81 = lgetv %ambText.4;
+        symbol [ ambText %tmp.81 145 33 40 ];
+        symbol [ Graphics %tmp.82 146 12 20 ];
+        %tmp.82 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.83 146 21 40 ];
+        %tmp.83 = getv %tmp.82 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.69 %tmp.70(%tmp.73, %tmp.78, %tmp.80, %tmp.81, %tmp.83);
+C__Users_morit_OneDrive_Anwendungen_Outdoor_RawLogger_source_RawLoggerView_mc_118_49_148_4_stop:
     }
 }
 [ @file = "C:\Users\morit\OneDrive\Anwendungen\Outdoor\RawLogger\source\RawLoggerView.mc"; @line = 1; ]
