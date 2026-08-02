@@ -1,0 +1,697 @@
+[ @file = "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Activity,1,14,22]; ]
+import Toybox.Activity;
+[ @file = "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Graphics,2,14,22]; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Lang,3,14,18]; ]
+import Toybox.Lang;
+[ @file = "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [WatchUi,4,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [FitContributor,5,14,28]; ]
+import Toybox.FitContributor;
+[ @file = "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc"; @line = 7; @symbol_classdef = [PressureLoggerView,7,6,24]; @symbol_extends<0> = [WatchUi,7,33,40]; @symbol_extends<1> = [DataField,7,41,50]; ]
+class PressureLoggerView extends WatchUi.DataField {
+    [ @file = "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc"; @line = 7; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc"; @line = 9; @position = 15; @symbol_vardef = [mValue,9,15,21]; @symbol_type<0> = [Number,9,25,31]; ]
+    protected
+    var mValue as Number;
+    [ @file = "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc"; @line = 10; @position = 15; @symbol_vardef = [mCounterField,10,15,28]; @symbol_type<0> = [FitContributor,10,32,46]; @symbol_type<1> = [Field,10,47,52]; ]
+    protected
+    var mCounterField as FitContributor.Field or Null;
+    [ @file = "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc"; @line = 11; @position = 15; @symbol_vardef = [mRawField,11,15,24]; @symbol_type<0> = [FitContributor,11,28,42]; @symbol_type<1> = [Field,11,43,48]; ]
+    protected
+    var mRawField as FitContributor.Field or Null;
+    [ @file = "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc"; @line = 12; @position = 15; @symbol_vardef = [mAmbientField,12,15,28]; @symbol_type<0> = [FitContributor,12,32,46]; @symbol_type<1> = [Field,12,47,52]; ]
+    protected
+    var mAmbientField as FitContributor.Field or Null;
+    [ @file = "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc"; @line = 13; @position = 15; @symbol_vardef = [mMslField,13,15,24]; @symbol_type<0> = [FitContributor,13,28,42]; @symbol_type<1> = [Field,13,43,48]; ]
+    protected
+    var mMslField as FitContributor.Field or Null;
+    [ @file = "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc"; @line = 14; @position = 15; @symbol_vardef = [mLastRaw,14,15,23]; @symbol_type<0> = [Float,14,27,32]; ]
+    protected
+    var mLastRaw as Float or Null;
+    [ @file = "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc"; @line = 16; @symbol_functiondef = [initialize,16,13,23]; ]
+    function initialize() as Void {
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_16_26_34_4_start:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 17 8 ]
+        symbol [ DataField %tmp.2 17 8 17 ];
+        %tmp.2 = getv ? :DataField;
+        symbol [ initialize %tmp.3 17 18 28 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 18 8 ]
+        %tmp.4 = 0;
+        symbol [ mValue ? 18 8 14 ];
+        putv self :mValue %tmp.4;
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 19 8 ]
+        %tmp.5 = self;
+        symbol [ createField %tmp.6 19 24 35 ];
+        %tmp.6 = getv function %tmp.5 :createField;
+        %tmp.7 = "";
+        %tmp.8 = 0;
+        symbol [ FitContributor %tmp.9 19 43 57 ];
+        %tmp.9 = getm $.Toybox.FitContributor;
+        symbol [ DATA_TYPE_UINT16 %tmp.10 19 58 74 ];
+        %tmp.10 = getv %tmp.9 :DATA_TYPE_UINT16;
+        %tmp.11 = newd 1;
+        %tmp.13 = const :mesgType;
+        symbol [ mesgType %tmp.13 20 13 21 const ];
+        symbol [ FitContributor %tmp.14 20 25 39 ];
+        %tmp.14 = getm $.Toybox.FitContributor;
+        symbol [ MESG_TYPE_RECORD %tmp.15 20 40 56 ];
+        %tmp.15 = getv %tmp.14 :MESG_TYPE_RECORD;
+        %tmp.16 = dup %tmp.11;
+        %tmp.17 = aputv %tmp.16 %tmp.13 %tmp.15;
+        %tmp.18 = invoke %tmp.5 %tmp.6(%tmp.7, %tmp.8, %tmp.10, %tmp.17);
+        symbol [ mCounterField ? 19 8 21 ];
+        putv self :mCounterField %tmp.18;
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 22 8 ]
+        %tmp.19 = self;
+        symbol [ createField %tmp.20 22 20 31 ];
+        %tmp.20 = getv function %tmp.19 :createField;
+        %tmp.21 = "raw_pressure";
+        %tmp.22 = 1;
+        symbol [ FitContributor %tmp.23 23 31 45 ];
+        %tmp.23 = getm $.Toybox.FitContributor;
+        symbol [ DATA_TYPE_FLOAT %tmp.24 23 46 61 ];
+        %tmp.24 = getv %tmp.23 :DATA_TYPE_FLOAT;
+        %tmp.25 = newd 2;
+        %tmp.27 = const :mesgType;
+        symbol [ mesgType %tmp.27 24 15 23 const ];
+        symbol [ FitContributor %tmp.28 24 27 41 ];
+        %tmp.28 = getm $.Toybox.FitContributor;
+        symbol [ MESG_TYPE_RECORD %tmp.29 24 42 58 ];
+        %tmp.29 = getv %tmp.28 :MESG_TYPE_RECORD;
+        %tmp.30 = dup %tmp.25;
+        %tmp.31 = aputv %tmp.30 %tmp.27 %tmp.29;
+        %tmp.33 = const :units;
+        symbol [ units %tmp.33 24 61 66 const ];
+        %tmp.34 = "Pa";
+        %tmp.35 = dup %tmp.31;
+        %tmp.36 = aputv %tmp.35 %tmp.33 %tmp.34;
+        %tmp.37 = invoke %tmp.19 %tmp.20(%tmp.21, %tmp.22, %tmp.24, %tmp.36);
+        symbol [ mRawField ? 22 8 17 ];
+        putv self :mRawField %tmp.37;
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 26 8 ]
+        %tmp.38 = self;
+        symbol [ createField %tmp.39 26 24 35 ];
+        %tmp.39 = getv function %tmp.38 :createField;
+        %tmp.40 = "ambient_pressure";
+        %tmp.41 = 2;
+        symbol [ FitContributor %tmp.42 27 35 49 ];
+        %tmp.42 = getm $.Toybox.FitContributor;
+        symbol [ DATA_TYPE_FLOAT %tmp.43 27 50 65 ];
+        %tmp.43 = getv %tmp.42 :DATA_TYPE_FLOAT;
+        %tmp.44 = newd 2;
+        %tmp.46 = const :mesgType;
+        symbol [ mesgType %tmp.46 28 15 23 const ];
+        symbol [ FitContributor %tmp.47 28 27 41 ];
+        %tmp.47 = getm $.Toybox.FitContributor;
+        symbol [ MESG_TYPE_RECORD %tmp.48 28 42 58 ];
+        %tmp.48 = getv %tmp.47 :MESG_TYPE_RECORD;
+        %tmp.49 = dup %tmp.44;
+        %tmp.50 = aputv %tmp.49 %tmp.46 %tmp.48;
+        %tmp.52 = const :units;
+        symbol [ units %tmp.52 28 61 66 const ];
+        %tmp.53 = "Pa";
+        %tmp.54 = dup %tmp.50;
+        %tmp.55 = aputv %tmp.54 %tmp.52 %tmp.53;
+        %tmp.56 = invoke %tmp.38 %tmp.39(%tmp.40, %tmp.41, %tmp.43, %tmp.55);
+        symbol [ mAmbientField ? 26 8 21 ];
+        putv self :mAmbientField %tmp.56;
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 30 8 ]
+        %tmp.57 = self;
+        symbol [ createField %tmp.58 30 20 31 ];
+        %tmp.58 = getv function %tmp.57 :createField;
+        %tmp.59 = "msl_pressure";
+        %tmp.60 = 3;
+        symbol [ FitContributor %tmp.61 31 31 45 ];
+        %tmp.61 = getm $.Toybox.FitContributor;
+        symbol [ DATA_TYPE_FLOAT %tmp.62 31 46 61 ];
+        %tmp.62 = getv %tmp.61 :DATA_TYPE_FLOAT;
+        %tmp.63 = newd 2;
+        %tmp.65 = const :mesgType;
+        symbol [ mesgType %tmp.65 32 15 23 const ];
+        symbol [ FitContributor %tmp.66 32 27 41 ];
+        %tmp.66 = getm $.Toybox.FitContributor;
+        symbol [ MESG_TYPE_RECORD %tmp.67 32 42 58 ];
+        %tmp.67 = getv %tmp.66 :MESG_TYPE_RECORD;
+        %tmp.68 = dup %tmp.63;
+        %tmp.69 = aputv %tmp.68 %tmp.65 %tmp.67;
+        %tmp.71 = const :units;
+        symbol [ units %tmp.71 32 61 66 const ];
+        %tmp.72 = "Pa";
+        %tmp.73 = dup %tmp.69;
+        %tmp.74 = aputv %tmp.73 %tmp.71 %tmp.72;
+        %tmp.75 = invoke %tmp.57 %tmp.58(%tmp.59, %tmp.60, %tmp.62, %tmp.74);
+        symbol [ mMslField ? 30 8 17 ];
+        putv self :mMslField %tmp.75;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_16_26_34_4_stop:
+    }
+    [ @file = "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc"; @line = 38; @symbol_functiondef = [onLayout,38,13,21]; @symbol_param<0> = [dc,38,22,24]; @symbol_param<0>_type<0> = [Dc,38,28,30]; ]
+    function onLayout(dc as Dc) as Void {
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_38_40_67_4_start:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 39 8 ]
+        [ "C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_38_40_67_4_start" "C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_38_40_67_4_stop" ]
+        %obscurityFlags.1 = local;
+        symbol [ obscurityFlags %obscurityFlags.1 39 12 26 ];
+        symbol [ DataField %tmp.2 39 29 38 ];
+        %tmp.2 = getv ? :DataField;
+        symbol [ getObscurityFlags %tmp.3 39 39 56 ];
+        %tmp.3 = getv function %tmp.2 :getObscurityFlags;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        lputv %obscurityFlags.1 %tmp.4;
+        symbol [ obscurityFlags %obscurityFlags.1 39 12 26 ];
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 42 8 ]
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_42_8_64_8_if_stmt:
+        %tmp.5 = lgetv %obscurityFlags.1;
+        symbol [ obscurityFlags %tmp.5 42 12 26 ];
+        symbol [ OBSCURE_TOP %tmp.7 42 31 42 ];
+        %tmp.7 = getv ? :OBSCURE_TOP;
+        symbol [ OBSCURE_LEFT %tmp.9 42 45 57 ];
+        %tmp.9 = getv ? :OBSCURE_LEFT;
+        %tmp.10 = bitor %tmp.7 %tmp.9;
+        %tmp.11 = eq %tmp.5 %tmp.10;
+        bf %tmp.11 @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_42_8_64_8_if_false;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_42_8_64_8_if_true:
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_42_60_46_8_start:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 43 12 ]
+        symbol [ View %tmp.13 43 12 16 ];
+        %tmp.13 = getv ? :View;
+        symbol [ setLayout %tmp.14 43 17 26 ];
+        %tmp.14 = getv function %tmp.13 :setLayout;
+        symbol [ Rez %tmp.16 43 27 30 ];
+        %tmp.16 = getv ? :Rez;
+        symbol [ Layouts %tmp.17 43 31 38 ];
+        %tmp.17 = getv %tmp.16 :Layouts;
+        symbol [ TopLeftLayout %tmp.18 43 39 52 ];
+        %tmp.18 = getv function %tmp.17 :TopLeftLayout;
+        %tmp.19 = lgetv %dc;
+        symbol [ dc %tmp.19 43 53 55 ];
+        %tmp.20 = invoke %tmp.17 %tmp.18(%tmp.19);
+        invoke %tmp.13 %tmp.14(%tmp.20);
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_42_60_46_8_stop:
+        goto @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_42_8_64_8_if_end;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_42_8_64_8_if_false:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 46 15 ]
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_46_15_64_8_if_stmt:
+        %tmp.21 = lgetv %obscurityFlags.1;
+        symbol [ obscurityFlags %tmp.21 46 19 33 ];
+        symbol [ OBSCURE_TOP %tmp.23 46 38 49 ];
+        %tmp.23 = getv ? :OBSCURE_TOP;
+        symbol [ OBSCURE_RIGHT %tmp.25 46 52 65 ];
+        %tmp.25 = getv ? :OBSCURE_RIGHT;
+        %tmp.26 = bitor %tmp.23 %tmp.25;
+        %tmp.27 = eq %tmp.21 %tmp.26;
+        bf %tmp.27 @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_46_15_64_8_if_false;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_46_15_64_8_if_true:
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_46_68_50_8_start:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 47 12 ]
+        symbol [ View %tmp.29 47 12 16 ];
+        %tmp.29 = getv ? :View;
+        symbol [ setLayout %tmp.30 47 17 26 ];
+        %tmp.30 = getv function %tmp.29 :setLayout;
+        symbol [ Rez %tmp.32 47 27 30 ];
+        %tmp.32 = getv ? :Rez;
+        symbol [ Layouts %tmp.33 47 31 38 ];
+        %tmp.33 = getv %tmp.32 :Layouts;
+        symbol [ TopRightLayout %tmp.34 47 39 53 ];
+        %tmp.34 = getv function %tmp.33 :TopRightLayout;
+        %tmp.35 = lgetv %dc;
+        symbol [ dc %tmp.35 47 54 56 ];
+        %tmp.36 = invoke %tmp.33 %tmp.34(%tmp.35);
+        invoke %tmp.29 %tmp.30(%tmp.36);
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_46_68_50_8_stop:
+        goto @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_46_15_64_8_if_end;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_46_15_64_8_if_false:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 50 15 ]
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_50_15_64_8_if_stmt:
+        %tmp.37 = lgetv %obscurityFlags.1;
+        symbol [ obscurityFlags %tmp.37 50 19 33 ];
+        symbol [ OBSCURE_BOTTOM %tmp.39 50 38 52 ];
+        %tmp.39 = getv ? :OBSCURE_BOTTOM;
+        symbol [ OBSCURE_LEFT %tmp.41 50 55 67 ];
+        %tmp.41 = getv ? :OBSCURE_LEFT;
+        %tmp.42 = bitor %tmp.39 %tmp.41;
+        %tmp.43 = eq %tmp.37 %tmp.42;
+        bf %tmp.43 @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_50_15_64_8_if_false;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_50_15_64_8_if_true:
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_50_70_54_8_start:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 51 12 ]
+        symbol [ View %tmp.45 51 12 16 ];
+        %tmp.45 = getv ? :View;
+        symbol [ setLayout %tmp.46 51 17 26 ];
+        %tmp.46 = getv function %tmp.45 :setLayout;
+        symbol [ Rez %tmp.48 51 27 30 ];
+        %tmp.48 = getv ? :Rez;
+        symbol [ Layouts %tmp.49 51 31 38 ];
+        %tmp.49 = getv %tmp.48 :Layouts;
+        symbol [ BottomLeftLayout %tmp.50 51 39 55 ];
+        %tmp.50 = getv function %tmp.49 :BottomLeftLayout;
+        %tmp.51 = lgetv %dc;
+        symbol [ dc %tmp.51 51 56 58 ];
+        %tmp.52 = invoke %tmp.49 %tmp.50(%tmp.51);
+        invoke %tmp.45 %tmp.46(%tmp.52);
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_50_70_54_8_stop:
+        goto @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_50_15_64_8_if_end;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_50_15_64_8_if_false:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 54 15 ]
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_54_15_64_8_if_stmt:
+        %tmp.53 = lgetv %obscurityFlags.1;
+        symbol [ obscurityFlags %tmp.53 54 19 33 ];
+        symbol [ OBSCURE_BOTTOM %tmp.55 54 38 52 ];
+        %tmp.55 = getv ? :OBSCURE_BOTTOM;
+        symbol [ OBSCURE_RIGHT %tmp.57 54 55 68 ];
+        %tmp.57 = getv ? :OBSCURE_RIGHT;
+        %tmp.58 = bitor %tmp.55 %tmp.57;
+        %tmp.59 = eq %tmp.53 %tmp.58;
+        bf %tmp.59 @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_54_15_64_8_if_else_false;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_54_15_64_8_if_true:
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_54_71_58_8_start:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 55 12 ]
+        symbol [ View %tmp.61 55 12 16 ];
+        %tmp.61 = getv ? :View;
+        symbol [ setLayout %tmp.62 55 17 26 ];
+        %tmp.62 = getv function %tmp.61 :setLayout;
+        symbol [ Rez %tmp.64 55 27 30 ];
+        %tmp.64 = getv ? :Rez;
+        symbol [ Layouts %tmp.65 55 31 38 ];
+        %tmp.65 = getv %tmp.64 :Layouts;
+        symbol [ BottomRightLayout %tmp.66 55 39 56 ];
+        %tmp.66 = getv function %tmp.65 :BottomRightLayout;
+        %tmp.67 = lgetv %dc;
+        symbol [ dc %tmp.67 55 57 59 ];
+        %tmp.68 = invoke %tmp.65 %tmp.66(%tmp.67);
+        invoke %tmp.61 %tmp.62(%tmp.68);
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_54_71_58_8_stop:
+        goto @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_54_15_64_8_if_end;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_54_15_64_8_if_else_false:
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_58_15_64_8_start:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 59 12 ]
+        symbol [ View %tmp.70 59 12 16 ];
+        %tmp.70 = getv ? :View;
+        symbol [ setLayout %tmp.71 59 17 26 ];
+        %tmp.71 = getv function %tmp.70 :setLayout;
+        symbol [ Rez %tmp.73 59 27 30 ];
+        %tmp.73 = getv ? :Rez;
+        symbol [ Layouts %tmp.74 59 31 38 ];
+        %tmp.74 = getv %tmp.73 :Layouts;
+        symbol [ MainLayout %tmp.75 59 39 49 ];
+        %tmp.75 = getv function %tmp.74 :MainLayout;
+        %tmp.76 = lgetv %dc;
+        symbol [ dc %tmp.76 59 50 52 ];
+        %tmp.77 = invoke %tmp.74 %tmp.75(%tmp.76);
+        invoke %tmp.70 %tmp.71(%tmp.77);
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 60 12 ]
+        [ "C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_58_15_64_8_start" "C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_58_15_64_8_stop" ]
+        %labelView.2 = local;
+        symbol [ labelView %labelView.2 60 16 25 ];
+        symbol [ View %tmp.79 60 28 32 ];
+        %tmp.79 = getv ? :View;
+        symbol [ findDrawableById %tmp.80 60 33 49 ];
+        %tmp.80 = getv function %tmp.79 :findDrawableById;
+        %tmp.81 = "label";
+        %tmp.82 = invoke %tmp.79 %tmp.80(%tmp.81);
+        %tmp.83 = as %tmp.82 Text;
+        symbol [ Text %tmp.83 60 62 66 ];
+        lputv %labelView.2 %tmp.83;
+        symbol [ labelView %labelView.2 60 16 25 ];
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 61 12 ]
+        %tmp.84 = lgetv %labelView.2;
+        symbol [ labelView %tmp.84 61 12 21 ];
+        %tmp.85 = lgetv %labelView.2;
+        symbol [ labelView %tmp.85 61 29 38 ];
+        symbol [ locY %tmp.86 61 39 43 ];
+        %tmp.86 = getv %tmp.85 :locY;
+        %tmp.87 = 16;
+        %tmp.88 = sub %tmp.86 %tmp.87;
+        symbol [ locY ? 61 22 26 ];
+        putv %tmp.84 :locY %tmp.88;
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 62 12 ]
+        [ "C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_58_15_64_8_start" "C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_58_15_64_8_stop" ]
+        %valueView.3 = local;
+        symbol [ valueView %valueView.3 62 16 25 ];
+        symbol [ View %tmp.90 62 28 32 ];
+        %tmp.90 = getv ? :View;
+        symbol [ findDrawableById %tmp.91 62 33 49 ];
+        %tmp.91 = getv function %tmp.90 :findDrawableById;
+        %tmp.92 = "value";
+        %tmp.93 = invoke %tmp.90 %tmp.91(%tmp.92);
+        %tmp.94 = as %tmp.93 Text;
+        symbol [ Text %tmp.94 62 62 66 ];
+        lputv %valueView.3 %tmp.94;
+        symbol [ valueView %valueView.3 62 16 25 ];
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 63 12 ]
+        %tmp.95 = lgetv %valueView.3;
+        symbol [ valueView %tmp.95 63 12 21 ];
+        %tmp.96 = lgetv %valueView.3;
+        symbol [ valueView %tmp.96 63 29 38 ];
+        symbol [ locY %tmp.97 63 39 43 ];
+        %tmp.97 = getv %tmp.96 :locY;
+        %tmp.98 = 7;
+        %tmp.99 = add %tmp.97 %tmp.98;
+        symbol [ locY ? 63 22 26 ];
+        putv %tmp.95 :locY %tmp.99;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_58_15_64_8_stop:
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_54_15_64_8_if_end:
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_50_15_64_8_if_end:
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_46_15_64_8_if_end:
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_42_8_64_8_if_end:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 66 8 ]
+        symbol [ View %tmp.101 66 9 13 ];
+        %tmp.101 = getv ? :View;
+        symbol [ findDrawableById %tmp.102 66 14 30 ];
+        %tmp.102 = getv function %tmp.101 :findDrawableById;
+        %tmp.103 = "label";
+        %tmp.104 = invoke %tmp.101 %tmp.102(%tmp.103);
+        %tmp.105 = as %tmp.104 Text;
+        symbol [ Text %tmp.105 66 43 47 ];
+        symbol [ setText %tmp.106 66 49 56 ];
+        %tmp.106 = getv function %tmp.105 :setText;
+        symbol [ Rez %tmp.108 66 57 60 ];
+        %tmp.108 = getv ? :Rez;
+        symbol [ Strings %tmp.109 66 61 68 ];
+        %tmp.109 = getv %tmp.108 :Strings;
+        symbol [ label %tmp.110 66 69 74 ];
+        %tmp.110 = getv %tmp.109 :label;
+        invoke %tmp.105 %tmp.106(%tmp.110);
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_38_40_67_4_stop:
+    }
+    [ @file = "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc"; @line = 73; @symbol_functiondef = [compute,73,13,20]; @symbol_param<0> = [info,73,21,25]; @symbol_param<0>_type<0> = [Activity,73,29,37]; @symbol_param<0>_type<1> = [Info,73,38,42]; ]
+    function compute(info as Activity.Info) as Void {
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_73_52_98_4_start:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 75 8 ]
+        symbol [ mValue %tmp.2 75 17 23 ];
+        %tmp.2 = getv ? :mValue;
+        %tmp.3 = 1;
+        %tmp.4 = add %tmp.2 %tmp.3;
+        symbol [ mValue ? 75 8 14 ];
+        putv self :mValue %tmp.4;
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 76 8 ]
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_76_8_78_8_if_stmt:
+        symbol [ mCounterField %tmp.6 76 12 25 ];
+        %tmp.6 = getv ? :mCounterField;
+        %tmp.7 = null;
+        %tmp.8 = ne %tmp.6 %tmp.7;
+        bf %tmp.8 @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_76_8_78_8_if_end;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_76_8_78_8_if_true:
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_76_35_78_8_start:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 77 8 ]
+        symbol [ mCounterField %tmp.10 77 8 21 ];
+        %tmp.10 = getv ? :mCounterField;
+        %tmp.11 = as %tmp.10 { (!Null) };
+        symbol [ setData %tmp.12 77 22 29 ];
+        %tmp.12 = getv function %tmp.11 :setData;
+        symbol [ mValue %tmp.14 77 30 36 ];
+        %tmp.14 = getv ? :mValue;
+        invoke %tmp.11 %tmp.12(%tmp.14);
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_76_35_78_8_stop:
+        goto @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_76_8_78_8_if_end;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_76_8_78_8_if_end:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 80 8 ]
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_80_8_85_8_if_stmt:
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_80_12_80_71_begin:
+        %tmp.15 = lgetv %info;
+        symbol [ info %tmp.15 80 12 16 ];
+        %tmp.17 = const :rawAmbientPressure;
+        symbol [ rawAmbientPressure %tmp.17 80 22 40 const ];
+        %tmp.18 = canhazplz %tmp.15 %tmp.17;
+        bf %tmp.18 @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_80_8_85_8_if_end;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_80_44_80_71_true:
+        %tmp.19 = lgetv %info;
+        symbol [ info %tmp.19 80 44 48 ];
+        %tmp.20 = as %tmp.19 { (interface { var rawAmbientPressure; }) };
+        symbol [ rawAmbientPressure %tmp.21 80 49 67 ];
+        %tmp.21 = getv %tmp.20 :rawAmbientPressure;
+        %tmp.22 = null;
+        %tmp.23 = ne %tmp.21 %tmp.22;
+        push %tmp.23;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_80_44_80_71_end:
+        %tmp.24 = phi [%tmp.18 @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_80_12_80_71_begin] [%tmp.23 @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_80_44_80_71_true] [%tmp.24 @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_80_44_80_71_end];
+        bf %tmp.24 @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_80_8_85_8_if_end;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_80_8_85_8_if_true:
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_80_77_85_8_start:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 81 12 ]
+        %tmp.25 = lgetv %info;
+        symbol [ info %tmp.25 81 23 27 ];
+        %tmp.26 = as %tmp.25 { (interface { var rawAmbientPressure; }) };
+        symbol [ rawAmbientPressure %tmp.27 81 28 46 ];
+        %tmp.27 = getv %tmp.26 :rawAmbientPressure;
+        symbol [ mLastRaw ? 81 12 20 ];
+        putv self :mLastRaw %tmp.27;
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 82 12 ]
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_82_12_84_12_if_stmt:
+        symbol [ mRawField %tmp.29 82 16 25 ];
+        %tmp.29 = getv ? :mRawField;
+        %tmp.30 = null;
+        %tmp.31 = ne %tmp.29 %tmp.30;
+        bf %tmp.31 @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_82_12_84_12_if_end;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_82_12_84_12_if_true:
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_82_35_84_12_start:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 83 16 ]
+        symbol [ mRawField %tmp.33 83 16 25 ];
+        %tmp.33 = getv ? :mRawField;
+        %tmp.34 = as %tmp.33 { (!Null) };
+        symbol [ setData %tmp.35 83 26 33 ];
+        %tmp.35 = getv function %tmp.34 :setData;
+        %tmp.36 = lgetv %info;
+        symbol [ info %tmp.36 83 34 38 ];
+        %tmp.37 = as %tmp.36 { (interface { var rawAmbientPressure; }) };
+        symbol [ rawAmbientPressure %tmp.38 83 39 57 ];
+        %tmp.38 = getv %tmp.37 :rawAmbientPressure;
+        invoke %tmp.34 %tmp.35(%tmp.38);
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_82_35_84_12_stop:
+        goto @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_82_12_84_12_if_end;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_82_12_84_12_if_end:
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_80_77_85_8_stop:
+        goto @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_80_8_85_8_if_end;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_80_8_85_8_if_end:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 87 8 ]
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_87_8_91_8_if_stmt:
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_87_12_87_65_begin:
+        %tmp.39 = lgetv %info;
+        symbol [ info %tmp.39 87 12 16 ];
+        %tmp.41 = const :ambientPressure;
+        symbol [ ambientPressure %tmp.41 87 22 37 const ];
+        %tmp.42 = canhazplz %tmp.39 %tmp.41;
+        bf %tmp.42 @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_87_8_91_8_if_end;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_87_41_87_65_true:
+        %tmp.43 = lgetv %info;
+        symbol [ info %tmp.43 87 41 45 ];
+        %tmp.44 = as %tmp.43 { (interface { var ambientPressure; }) };
+        symbol [ ambientPressure %tmp.45 87 46 61 ];
+        %tmp.45 = getv %tmp.44 :ambientPressure;
+        %tmp.46 = null;
+        %tmp.47 = ne %tmp.45 %tmp.46;
+        push %tmp.47;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_87_41_87_65_end:
+        %tmp.48 = phi [%tmp.42 @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_87_12_87_65_begin] [%tmp.47 @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_87_41_87_65_true] [%tmp.48 @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_87_41_87_65_end];
+        bf %tmp.48 @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_87_8_91_8_if_end;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_87_8_91_8_if_true:
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_87_71_91_8_start:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 88 12 ]
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_88_12_90_12_if_stmt:
+        symbol [ mAmbientField %tmp.50 88 16 29 ];
+        %tmp.50 = getv ? :mAmbientField;
+        %tmp.51 = null;
+        %tmp.52 = ne %tmp.50 %tmp.51;
+        bf %tmp.52 @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_88_12_90_12_if_end;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_88_12_90_12_if_true:
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_88_39_90_12_start:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 89 16 ]
+        symbol [ mAmbientField %tmp.54 89 16 29 ];
+        %tmp.54 = getv ? :mAmbientField;
+        %tmp.55 = as %tmp.54 { (!Null) };
+        symbol [ setData %tmp.56 89 30 37 ];
+        %tmp.56 = getv function %tmp.55 :setData;
+        %tmp.57 = lgetv %info;
+        symbol [ info %tmp.57 89 38 42 ];
+        %tmp.58 = as %tmp.57 { (interface { var ambientPressure; }) };
+        symbol [ ambientPressure %tmp.59 89 43 58 ];
+        %tmp.59 = getv %tmp.58 :ambientPressure;
+        invoke %tmp.55 %tmp.56(%tmp.59);
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_88_39_90_12_stop:
+        goto @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_88_12_90_12_if_end;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_88_12_90_12_if_end:
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_87_71_91_8_stop:
+        goto @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_87_8_91_8_if_end;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_87_8_91_8_if_end:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 93 8 ]
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_93_8_97_8_if_stmt:
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_93_12_93_75_begin:
+        %tmp.60 = lgetv %info;
+        symbol [ info %tmp.60 93 12 16 ];
+        %tmp.62 = const :meanSeaLevelPressure;
+        symbol [ meanSeaLevelPressure %tmp.62 93 22 42 const ];
+        %tmp.63 = canhazplz %tmp.60 %tmp.62;
+        bf %tmp.63 @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_93_8_97_8_if_end;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_93_46_93_75_true:
+        %tmp.64 = lgetv %info;
+        symbol [ info %tmp.64 93 46 50 ];
+        %tmp.65 = as %tmp.64 { (interface { var meanSeaLevelPressure; }) };
+        symbol [ meanSeaLevelPressure %tmp.66 93 51 71 ];
+        %tmp.66 = getv %tmp.65 :meanSeaLevelPressure;
+        %tmp.67 = null;
+        %tmp.68 = ne %tmp.66 %tmp.67;
+        push %tmp.68;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_93_46_93_75_end:
+        %tmp.69 = phi [%tmp.63 @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_93_12_93_75_begin] [%tmp.68 @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_93_46_93_75_true] [%tmp.69 @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_93_46_93_75_end];
+        bf %tmp.69 @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_93_8_97_8_if_end;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_93_8_97_8_if_true:
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_93_81_97_8_start:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 94 12 ]
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_94_12_96_12_if_stmt:
+        symbol [ mMslField %tmp.71 94 16 25 ];
+        %tmp.71 = getv ? :mMslField;
+        %tmp.72 = null;
+        %tmp.73 = ne %tmp.71 %tmp.72;
+        bf %tmp.73 @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_94_12_96_12_if_end;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_94_12_96_12_if_true:
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_94_35_96_12_start:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 95 16 ]
+        symbol [ mMslField %tmp.75 95 16 25 ];
+        %tmp.75 = getv ? :mMslField;
+        %tmp.76 = as %tmp.75 { (!Null) };
+        symbol [ setData %tmp.77 95 26 33 ];
+        %tmp.77 = getv function %tmp.76 :setData;
+        %tmp.78 = lgetv %info;
+        symbol [ info %tmp.78 95 34 38 ];
+        %tmp.79 = as %tmp.78 { (interface { var meanSeaLevelPressure; }) };
+        symbol [ meanSeaLevelPressure %tmp.80 95 39 59 ];
+        %tmp.80 = getv %tmp.79 :meanSeaLevelPressure;
+        invoke %tmp.76 %tmp.77(%tmp.80);
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_94_35_96_12_stop:
+        goto @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_94_12_96_12_if_end;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_94_12_96_12_if_end:
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_93_81_97_8_stop:
+        goto @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_93_8_97_8_if_end;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_93_8_97_8_if_end:
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_73_52_98_4_stop:
+    }
+    [ @file = "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc"; @line = 102; @symbol_functiondef = [onUpdate,102,13,21]; @symbol_param<0> = [dc,102,22,24]; @symbol_param<0>_type<0> = [Dc,102,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_102_40_119_4_start:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 104 8 ]
+        symbol [ View %tmp.2 104 9 13 ];
+        %tmp.2 = getv ? :View;
+        symbol [ findDrawableById %tmp.3 104 14 30 ];
+        %tmp.3 = getv function %tmp.2 :findDrawableById;
+        %tmp.4 = "Background";
+        %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
+        %tmp.6 = as %tmp.5 Text;
+        symbol [ Text %tmp.6 104 48 52 ];
+        symbol [ setColor %tmp.7 104 54 62 ];
+        %tmp.7 = getv function %tmp.6 :setColor;
+        %tmp.8 = self;
+        symbol [ getBackgroundColor %tmp.9 104 63 81 ];
+        %tmp.9 = getv function %tmp.8 :getBackgroundColor;
+        %tmp.10 = invoke %tmp.8 %tmp.9();
+        invoke %tmp.6 %tmp.7(%tmp.10);
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 107 8 ]
+        [ "C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_102_40_119_4_start" "C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_102_40_119_4_stop" ]
+        %value.1 = local;
+        symbol [ value %value.1 107 12 17 ];
+        symbol [ View %tmp.12 107 20 24 ];
+        %tmp.12 = getv ? :View;
+        symbol [ findDrawableById %tmp.13 107 25 41 ];
+        %tmp.13 = getv function %tmp.12 :findDrawableById;
+        %tmp.14 = "value";
+        %tmp.15 = invoke %tmp.12 %tmp.13(%tmp.14);
+        %tmp.16 = as %tmp.15 Text;
+        symbol [ Text %tmp.16 107 54 58 ];
+        lputv %value.1 %tmp.16;
+        symbol [ value %value.1 107 12 17 ];
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 108 8 ]
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_108_8_112_8_if_stmt:
+        %tmp.17 = self;
+        symbol [ getBackgroundColor %tmp.18 108 12 30 ];
+        %tmp.18 = getv function %tmp.17 :getBackgroundColor;
+        %tmp.19 = invoke %tmp.17 %tmp.18();
+        symbol [ Graphics %tmp.20 108 36 44 ];
+        %tmp.20 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.21 108 45 56 ];
+        %tmp.21 = getv %tmp.20 :COLOR_BLACK;
+        %tmp.22 = eq %tmp.19 %tmp.21;
+        bf %tmp.22 @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_108_8_112_8_if_else_false;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_108_8_112_8_if_true:
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_108_58_110_8_start:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 109 12 ]
+        %tmp.23 = lgetv %value.1;
+        symbol [ value %tmp.23 109 12 17 ];
+        symbol [ setColor %tmp.24 109 18 26 ];
+        %tmp.24 = getv function %tmp.23 :setColor;
+        symbol [ Graphics %tmp.25 109 27 35 ];
+        %tmp.25 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.26 109 36 47 ];
+        %tmp.26 = getv %tmp.25 :COLOR_WHITE;
+        invoke %tmp.23 %tmp.24(%tmp.26);
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_108_58_110_8_stop:
+        goto @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_108_8_112_8_if_end;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_108_8_112_8_if_else_false:
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_110_15_112_8_start:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 111 12 ]
+        %tmp.27 = lgetv %value.1;
+        symbol [ value %tmp.27 111 12 17 ];
+        symbol [ setColor %tmp.28 111 18 26 ];
+        %tmp.28 = getv function %tmp.27 :setColor;
+        symbol [ Graphics %tmp.29 111 27 35 ];
+        %tmp.29 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.30 111 36 47 ];
+        %tmp.30 = getv %tmp.29 :COLOR_BLACK;
+        invoke %tmp.27 %tmp.28(%tmp.30);
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_110_15_112_8_stop:
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_108_8_112_8_if_end:
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 114 8 ]
+        [ "C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_102_40_119_4_start" "C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_102_40_119_4_stop" ]
+        %status.2 = local;
+        symbol [ status %status.2 114 12 18 ];
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_114_21_114_57_begin:
+        symbol [ mCounterField %tmp.32 114 22 35 ];
+        %tmp.32 = getv ? :mCounterField;
+        %tmp.33 = null;
+        %tmp.34 = eq %tmp.32 %tmp.33;
+        bf %tmp.34 @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_114_21_114_57_else_false;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_114_21_114_57_true:
+        %tmp.35 = "NULL ";
+        push %tmp.35;
+        goto @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_114_21_114_57_end;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_114_21_114_57_else_false:
+        %tmp.36 = "OK ";
+        push %tmp.36;
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_114_21_114_57_end:
+        %tmp.37 = phi [%tmp.34 @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_114_21_114_57_begin] [%tmp.35 @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_114_21_114_57_true] [%tmp.36 @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_114_21_114_57_else_false] [%tmp.37 @C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_114_21_114_57_end];
+        lputv %status.2 %tmp.37;
+        symbol [ status %status.2 114 12 18 ];
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 115 8 ]
+        %tmp.38 = lgetv %value.1;
+        symbol [ value %tmp.38 115 8 13 ];
+        symbol [ setText %tmp.39 115 14 21 ];
+        %tmp.39 = getv function %tmp.38 :setText;
+        %tmp.40 = lgetv %status.2;
+        symbol [ status %tmp.40 115 22 28 ];
+        symbol [ mValue %tmp.42 115 31 37 ];
+        %tmp.42 = getv ? :mValue;
+        symbol [ toString %tmp.43 115 38 46 ];
+        %tmp.43 = getv function %tmp.42 :toString;
+        %tmp.44 = invoke %tmp.42 %tmp.43();
+        %tmp.45 = add %tmp.40 %tmp.44;
+        invoke %tmp.38 %tmp.39(%tmp.45);
+[ "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc" 118 8 ]
+        symbol [ View %tmp.47 118 8 12 ];
+        %tmp.47 = getv ? :View;
+        symbol [ onUpdate %tmp.48 118 13 21 ];
+        %tmp.48 = getv function %tmp.47 :onUpdate;
+        %tmp.49 = lgetv %dc;
+        symbol [ dc %tmp.49 118 22 24 ];
+        invoke %tmp.47 %tmp.48(%tmp.49);
+C__Users_morit_OneDrive_Anwendungen_Outdoor_PressureLogger_PressureLogger_source_PressureLoggerView_mc_102_40_119_4_stop:
+    }
+}
+[ @file = "C:\Users\morit\OneDrive\Anwendungen\Outdoor\PressureLogger\PressureLogger\source\PressureLoggerView.mc"; @line = 1; ]
+<init> {
+}
